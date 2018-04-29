@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Adopt Stop</title>
+</head>
+<style>
+	.dog{
+		text-align: center;
+		font-family: Courier;
+	}
+	#scrollBox{
+		overflow: scroll;
+		border: 1px solid black;
+		width: 200px;
+		height: 68px;
+		resize: none;
+		font-family: Courier;
+	}
+	#testimonials{
+		font-size: 20px;
+		font-family: Courier;
+	}
+	#homepage, #login, #contact{
+		display: inline-block;
+		border: 1px solid black;
+		padding: 3px;
+		font-family: Courier;
+	}
+	#submit{
+/* 
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+ */
+ 		border: 1px solid black;
+		font-family: Courier;
+		font-size: 12px;
+	}
+	#submit:hover {
+		background-color: pink;
+	}
+	#submit:active {
+		background-color: orange;
+		color: white;
+	}
+	#adoptForm{
+		font-family: Courier;
+		font-size: 11px;
+	}
+	
+</style>
+<body>
+	<div style="width: 250px">
+	<figure>
+	<img src="dog.png" style="width: 100%; height: 100%">
+	<figcaption class="dog">Sparky is looking for a new home.</figcaption>
+	</figure>
+	</div>
+	
+	
+	<div>
+	<div id="homepage">Home</div>
+	<div id="login">Sign Up/Login</div>
+	<div id="contact">Contact Us</div>
+	</div>
+	<br>
+	
+	<form action="signup.php" method="post">
+	<div id="adoptForm">
+	Sign Up to Begin the Adoption Process
+	<br>
+	Name:<input type="text" name="name">
+	<br>
+	Email:<input type="email" name="email">
+	<br>
+	Username:<input type="text" name="username">
+	<br>
+	Password:<input type="password" name="password">
+	<br>
+	Confirm Password:<input type="password" name="confirmPassword">
+	<br>
+	
+	<textarea id="scrollBox" placeholder="Hi there. Why don't you tell us a little about yourself? Let us know why you would like to adopt a pet. We'll get back to you in a few business days."></textarea>
+	<br>
+	<input type="submit" id="submit" value="I'm Ready to Adopt!">
+	</div>
+	</form>
+	
+	
+	<br><br><br><br><br><br><br><br><br>
+	<div id="testimonials">Testimonials</div>
+	</body> 
+
+</html>
